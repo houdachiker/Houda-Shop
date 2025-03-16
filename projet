@@ -1,0 +1,25 @@
+** Houda-Shop**
+
+Houda Shop est une solution innovante de commerce électronique permettant aux utilisateurs d'acheter une large gamme de produits en ligne en toute simplicité.
+
+**Caractéristiques principales**
+
+- **Expérience utilisateur améliorée** : Interface conviviale et navigation fluide.
+- **Gestion complète des produits** : Ajout, modification et suppression des articles.
+- **Panier intelligent** : Gestion simplifiée des achats et suivi des commandes.
+- **Paiement sécurisé** : Intégration de multiples options de paiement.
+- **Gestion des comptes** : Inscription, connexion et personnalisation du profil.
+- **Compatibilité multi-plateforme** : Adaptation aux smartphones, tablettes et ordinateurs.
+
+** Modules clés**
+
+1. **Accueil** : Présentation de mon site avec un header pour parcourir toutes les élements de mon site
+3. **Page produit** : Détails, avis clients et options d'achat.
+4. **Panier** : Gestion des articles et validation de commande.
+6. **Tableau de bord admin** : Gestion des stocks, utilisateurs et commandes.
+
+** Technologies utilisées**
+
+- **Front-end** : HTML5, CSS3, JavaScript 
+
+
