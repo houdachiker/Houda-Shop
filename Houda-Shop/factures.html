@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestion des Factures</title>
+    <link rel="stylesheet" href="factures.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestion des Factures</h1>
+        <form id="facture-form">
+            <label for="facture-id">ID de la Facture:</label>
+            <input type="number" id="facture-id" placeholder="ID" required>
+
+            <label for="client-name">Nom du Client:</label>
+            <input type="text" id="client-name" placeholder="Nom du Client" required>
+
+            <label for="montant">Montant:</label>
+            <input type="text" id="montant" placeholder="Montant" required> <!-- Changed to text type -->
+
+            <button type="submit">Ajouter Facture</button>
+        </form>
+
+        <div id="facture-list">
+            <h2>Liste des Factures</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Nom du Client</th>
+                        <th>Montant</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody id="facture-table-body">
+                    <!-- Les factures seront affichées ici -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="factures1.js"></script>
+    <script>
+        // Récupérer le total des produits depuis l'URL
+        const urlParams = new URLSearchParams(window.location.search);
+        const total = urlParams.get('total');
+
+        // Si le total est présent dans l'URL, le définir comme valeur par défaut du champ "montant"
+        if (total) {
+            const formattedTotal = total.startsWith('$') ? total : `$${total}`;
+            document.getElementById('montant').value = total;
+        }
+    </script>
+</body>
+</html>

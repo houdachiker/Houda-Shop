@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="admin.css">
+</head>
+<body>
+    <h1>Dashboard Admin</h1>
+    <!-- Section Produits -->
+    <section>
+        <h2>Gestion des Produits</h2>
+        <form id="productForm">
+            <label for="productName">Nom du produit :</label>
+            <input type="text" id="productName" placeholder="Nom du produit" required>
+            <label for="productImage">URL de l'image :</label>
+            <input type="url" id="productImage" placeholder="URL de l'image" required>
+            <button type="submit">Ajouter Produit</button>
+        </form>
+        <table id="productTable">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Image</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Section Utilisateurs -->
+    <section>
+        <h2>Gestion des Utilisateurs</h2>
+        <form id="userForm">
+            <label for="userName">Nom de l'utilisateur :</label>
+            <input type="text" id="userName" placeholder="Nom de l'utilisateur" required>
+            <button type="submit">Ajouter Utilisateur</button>
+        </form>
+        <table id="userTable">
+            <thead>
+                <tr>
+                    <th>Nom</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            </tbody>
+        </table>
+    </section>
+
+    <script src="admin.js"></script>
+</body>
+</html>

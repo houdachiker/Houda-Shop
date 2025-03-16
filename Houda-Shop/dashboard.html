@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard.css">
+    <!-- Chart.js -->
+</head>
+
+<body>
+    <!-- Barre de navigation -->
+    <header>
+        <h1>Tableau de Bord</h1>
+        <button onclick="logout()">Se déconnecter</button>
+    </header>
+
+    <!-- Section principale du dashboard -->
+    <main>
+        <div class="stats-container">
+            <div class="stat-card">
+                <h3>Total Utilisateurs</h3>
+                <p id="total-users">150</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Produits</h3>
+                <p id="total-products">80</p>
+            </div>
+            <div class="stat-card">
+                <h3>Total Commandes</h3>
+                <p id="total-orders">120</p>
+            </div>
+        </div>
+
+        <!-- Section pour les graphiques -->
+        <div class="charts-container">
+            <canvas id="salesChart"></canvas>
+            <canvas id="usersChart"></canvas>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MyManager. Tous droits réservés.</p>
+    </footer>
+    <div class="api">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script></div>
+    <!-- Fichier JavaScript -->
+    <script src="dashboard.js"></script>
+</body>
+
+</html>

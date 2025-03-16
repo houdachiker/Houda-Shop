@@ -1,0 +1,171 @@
+/* Réinitialisation de base */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #65278f;
+    padding: 30px;
+    color: #333;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color:white;
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+/* Section */
+section {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/* Formulaire */
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="url"] {
+    padding: 12px;
+    width: 280px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+input[type="url"]:focus {
+    border-color: #5cb85c;
+    outline: none;
+}
+
+button {
+    padding: 12px 25px;
+    border: none;
+    background-color: #9b3da2;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #c76bcd;
+}
+
+button:active {
+    background-color: #9b3da2;
+}
+
+/* Table */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+th,
+td {
+    padding: 15px;
+    border: 1px solid #ccc;
+    text-align: left;
+    font-size: 14px;
+}
+
+th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+/* Actions */
+button.delete-btn {
+    background-color: #d9534f;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.delete-btn:hover {
+    background-color: #c9302c;
+}
+
+button.delete-btn:active {
+    background-color: #ac2925;
+}
+
+button.edit-btn {
+    background-color: #5bc0de;
+    border-radius: 5px;
+    padding: 8px 15px;
+    color: white;
+    cursor: pointer;
+    font-size: 14px;
+    margin-left: 10px;
+    transition: background-color 0.3s ease;
+}
+
+button.edit-btn:hover {
+    background-color: #31b0d5;
+}
+
+button.edit-btn:active {
+    background-color: #28a7d0;
+}
+
+/* Image des produits */
+img {
+    max-width: 60px;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Animation des boutons */
+button {
+    transition: transform 0.2s ease-in-out;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
+
+/* Effet de survol sur la ligne de la table */
+tr:hover {
+    background-color: #e9f7fc;
+    cursor: pointer;
+}
+
+button.delete-btn,
+button.edit-btn {
+    transition: transform 0.2s ease;
+}
+
+button.delete-btn:hover,
+button.edit-btn:hover {
+    transform: scale(1.1);
+}

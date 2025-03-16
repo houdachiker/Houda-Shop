@@ -1,0 +1,147 @@
+/* Global styles */
+* {
+    box-sizing: border-box; /* Assure la gestion correcte des bordures */
+}
+
+body {
+    display: flex; /* Utilisation de flexbox pour la mise en page */
+    flex-direction: column; /* Aligne les éléments dans une colonne */
+    min-height: 100vh; /* Assure que le body occupe au moins la hauteur de l'écran */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f9;
+    line-height: 1.6;
+    font-size: 16px;
+}
+
+/* Header principal */
+header {
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    padding: 3px 20px; /* Réduit encore plus la hauteur du header */
+    background-color: #510f75;
+    color: white;
+    flex-wrap: wrap;
+}
+
+#logo {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+#logo img {
+    height: 80px; /* Augmente la taille du logo */
+    width: auto;
+}
+
+/* Menu de navigation horizontal */
+#sidebar {
+    flex-grow: 1;
+    margin-left: 20px;
+}
+
+#sidebar ul {
+    display: flex;
+    justify-content: flex-start;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#sidebar li {
+    margin-right: 20px;
+}
+
+#sidebar a {
+    color: white;
+    text-decoration: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+#sidebar a:hover {
+    background-color: #c69fdb;
+}
+
+/* Bouton et sélection de langue */
+#navbar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#navbar button {
+    padding: 10px 15px;
+    background-color: #b967e5;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#navbar button:hover {
+    background-color: #c69fdb;
+}
+
+#language select {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Vidéo */
+.video {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Utilisation de position fixed pour garantir le centrage */
+    top: 50%; /* Centre verticalement */
+    left: 50%; /* Centre horizontalement */
+    transform: translate(-50%, -50%); /* Ajuste parfaitement */
+    width: 100%; /* Assure que la vidéo occupe toute la largeur de l'écran */
+    height: 100vh; /* Couvre toute la hauteur de l'écran */
+    background-color: #323335;
+    z-index: -1; /* Pour que la vidéo reste en arrière-plan */
+}
+
+video {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover; /* Empêche la distorsion de la vidéo */
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 1px;
+    background-color: #510f75;
+    color: white;
+    margin-top: auto; /* Permet au footer de rester en bas de la page */
+}
+
+/* Responsive design */
+@media screen and (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px; /* Un peu plus d'espace pour les petits écrans */
+    }
+
+    #sidebar ul {
+        flex-direction: row; 
+        flex-wrap: wrap; 
+    }
+
+    #navbar {
+        flex-direction: column;
+        gap: 5px;
+        padding:20px;
+    }
+
+    #logo img {
+        height: 200px; /* Logo encore plus petit sur petit écran */
+    }
+}

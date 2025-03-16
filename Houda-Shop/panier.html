@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mon Panier</title>
+    <link rel="stylesheet" href="panier.css">
+</head>
+<body>
+    <header>
+        <h1>Mes commandes</h1>
+        <nav>
+            <a href="pageacceuil.html">Acceuil</a>
+            <a href="produits.html">Produits</a>
+            <a href="panier.html">Mon Panier</a>
+            
+        </nav>
+    </header>
+
+    <section id="panier">
+        <h2>Mon Panier</h2>
+        <div id="panier-container">
+            <!-- Les produits du panier seront affichés ici -->
+        </div>
+        <div id="total">
+            <p>Total : <span id="total-price">0</span> €</p>
+        </div>
+        <button id="valider-commande" onclick="validerCommande()">Valider ma commande</button>
+
+        <!-- Formulaire caché -->
+        <form id="formulaire-commande" style="display: none;" onsubmit="envoyerCommande(event)">
+            <h3>Informations de Livraison</h3>
+            <label for="nom">Nom :</label>
+            <input type="text" id="nom" name="nom" required>
+
+            <label for="adresse">Adresse :</label>
+            <input type="text" id="adresse" name="adresse" required>
+
+            <label for="telephone">Téléphone :</label>
+            <input type="tel" id="telephone" name="telephone" required>
+
+            <button type="submit">Confirmer la commande</button>
+        </form>
+    </section>
+
+
+    <script src="panier.js"></script>
+</body>
+</html>

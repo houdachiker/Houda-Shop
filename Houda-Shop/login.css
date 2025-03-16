@@ -1,0 +1,121 @@
+/* General Style */
+body {
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #be6df4; 
+    color:#be6df4;
+}
+
+/* Containers */
+#login-container, #signup-container {
+    background: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    width: 100%;
+    transition: all 0.3s ease-in-out;
+}
+
+#login-container:hover, #signup-container:hover {
+    transform: translateY(-5px);
+}
+
+/* Headings */
+h2 {
+    font-size: 40px; /* Taille plus grande */
+    color: #6e1786; /* Couleur mauve */
+    text-align: center;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    font-weight:bolder;
+    text-transform: uppercase;
+    text-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2); /* Ombre derrière le texte */
+    margin-top: 30px;
+}
+h2:hover {
+    color: #be6df4; /* Change la couleur lorsque survolé */
+    cursor: pointer; /* Ajoute un curseur pointer pour indiquer l'interaction */
+    transition: color 0.3s ease; /* Transition douce */
+}
+
+/* Inputs */
+input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+input:focus {
+    border-color:#c69fdb ;
+    outline: none;
+    box-shadow: 0 0 5px rgba(217, 52, 232, 0.519);
+}
+
+/* Buttons */
+button {
+    width: 100%;
+    padding: 12px 15px;
+    background-color:#6e1786;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #be6df4;
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #c69fdb;
+    transform: translateY(0);
+}
+
+/* Links */
+a {
+    color: #2575fc;
+    text-decoration: none;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s ease-in-out;
+}
+
+a:hover {
+    color: #1b5fbd;
+    text-decoration: underline;
+}
+
+/* Forms */
+#login-form, #signup-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 480px) {
+    body {
+        padding: 10px;
+    }
+    #login-container, #signup-container {
+        padding: 20px;
+    }
+    h2 {
+        font-size: 1.5em;
+    }
+    input, button {
+        font-size: 0.9rem;
+    }
+}
